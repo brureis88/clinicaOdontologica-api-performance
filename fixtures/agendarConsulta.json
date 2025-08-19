@@ -1,0 +1,8 @@
+{
+    "pacienteId": 1,
+    "profissionalId": 1,
+    "data": "2025-08-19",
+    "horario": "09:00",
+    "tipoConsulta": "consulta_comum",
+    "observacoes": "Teste de Performance"
+}
