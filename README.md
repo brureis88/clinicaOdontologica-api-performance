@@ -5,7 +5,7 @@ Repositório para testes de performance utilizando [K6](https://k6.io/) com scri
 
 ## 🔍 Introdução
 
-Este projeto tem como objetivo realizar testes de carga e performance em APIs REST, simulando diferentes cenários de agendamentos de consulta e validando a performance dos endpoints. Os testes são escritos em JavaScript e executados utilizando a ferramenta K6.
+Este projeto tem como objetivo realizar testes de carga e performance em APIs REST. Os testes são escritos em JavaScript e executados utilizando a ferramenta K6.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -19,7 +19,6 @@ Este projeto tem como objetivo realizar testes de carga e performance em APIs RE
 ```
 .
 ├── fixtures/              # Dados de entrada para os testes (ex: payloads)
-├── helpers/               # Funções utilitárias reutilizáveis para interação com a API
 ├── tests/                 # Casos de teste
 |── utils/                 # Funções utilitárias
 |── config/                # Arquivo de configuração
@@ -29,19 +28,38 @@ Este projeto tem como objetivo realizar testes de carga e performance em APIs RE
 ## 🗂️ Objetivo de Cada Grupo de Arquivos
 
 - `fixtures/`: Dados de entrada para os testes (ex: usuários, payloads).
-- `helpers/`: Funções utilitárias reutilizáveis para interação com a API.
 - `tests/`: Casos de teste.
 - `utils/`: Funções utilitárias.
 - `config/`: Arquivo de configuração.
 - `README.md`: Arquivo de documentação do projeto.
+
+## Pré-requisitos
+
+- Node.js (recomendado: versão 18+)
+- npm ou yarn
+- Clonar e rodar o projetos de API
+  - [API - clinicaOdontologica-api](https://github.com/brureis88/clinicaOdontologica-api)
+
+## Como iniciar o ambiente
+
+### 1. Inicie a API
+
+Clone o repositório da API e siga as instruções do README de lá. Geralmente:
+
+```bash
+git clone https://github.com/brureis88/clinicaOdontologica-api.git
+cd clinicaOdontologica-api
+npm install
+npm start
+```
 
 ## 🚀 Modo de Instalação
 
 1. Instale o [K6](https://k6.io/docs/getting-started/installation/) na sua máquina.
 2. Clone este repositório:
    ```bash
-   git clone https://github.com/brureis88/clinicaOdontologica-api
-   cd projetoClinica
+   git clone https://github.com/brureis88/clinicaOdontologica-api-performance
+   cd projetoClinicaPerformance
    ```
 
 ## ▶️ Modo de Execução
@@ -69,3 +87,9 @@ Este projeto tem como objetivo realizar testes de carga e performance em APIs RE
    ```
 
    Após a execução, o relatório estará salvo como `html-report.html`
+
+## 📝 Licença
+
+Este projeto é destinado exclusivamente para estudos de teste de software.
+
+**Desenvolvido por Bruno Reis**
